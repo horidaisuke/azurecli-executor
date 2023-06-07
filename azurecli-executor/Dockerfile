@@ -1,4 +1,4 @@
-FROM library/docker:18.09.9
+FROM library/docker:19.03.15
 ENV AZURE_CLI_VERSION 2.49.0
 RUN apk update \
  && apk add --no-cache \
