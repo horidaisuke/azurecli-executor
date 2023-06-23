@@ -20,7 +20,7 @@ executors:
 
 Tags name is made from join of [simple tags of docker](https://hub.docker.com/_/docker) and [tags of azure-cli](https://github.com/Azure/azure-cli/tags).
 
-* `23.0.6-azurecli-2.49.0`, `latest`
+* `24.0.2-azurecli-2.49.0`, `latest`
 
 ## License
 
