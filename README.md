@@ -14,6 +14,26 @@ executors:
     shell: /bin/bash -leo pipefail
     environment:
       - BASH_ENV: /etc/profile
+
+# Use orbs command directly in azurecli-executor executor
+orbs:
+  azure-acr: circleci/azure-acr@0.2.1
+jobs:
+  docker-push-example:
+    executor:
+      name: azurecli-executor
+    steps:
+      - run:
+          command: |
+            echo 'export ARM_SUBSCRIPTION_ID="${SUBSCRIPTION_ID}"' >> $BASH_ENV
+            echo 'export AZURE_SP_TENANT="${TENANT_ID}"' >> $BASH_ENV
+            echo 'export AZURE_SP="${SERVICE_PRINCIPAL_APPLICATION_ID}"' >> $BASH_ENV
+            echo 'export AZURE_SP_PASSWORD="${SERVICE_PRINCIPAL_CLIENT_SECRET}"' >> $BASH_ENV
+      - azure-acr/build-and-push-image:
+          login-server-name: example.azurecr.io
+          registry-name: example
+          tag: latest
+          repo: something
 ```
 
 ## Tags
