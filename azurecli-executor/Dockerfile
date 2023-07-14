@@ -1,4 +1,4 @@
-FROM library/docker:24.0.2
+FROM library/docker:24.0.4
 ENV AZURE_CLI_VERSION 2.50.0
 RUN apk update \
  && apk add --no-cache \
