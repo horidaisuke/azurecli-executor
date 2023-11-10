@@ -1,5 +1,5 @@
 FROM library/docker:20.10.24
-ENV AZURE_CLI_VERSION 2.53.0
+ENV AZURE_CLI_VERSION 2.53.1
 RUN apk update \
  && apk add --no-cache \
     bash \
