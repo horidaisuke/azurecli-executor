@@ -1,4 +1,4 @@
-FROM library/docker:24.0.7-alpine3.18
+FROM library/docker:25.0.1
 ENV AZURE_CLI_VERSION 2.56.0
 RUN apk update \
  && apk add --no-cache \
