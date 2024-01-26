@@ -15,5 +15,6 @@ RUN apk update \
     python3-dev \
  && pip3 install --upgrade pip \
  && pip3 install azure-cli==${AZURE_CLI_VERSION} \
+ && rm -rf /root/.cache/pip \
  && apk del .build-deps \
  && rm -rf /var/cache/apk/*
