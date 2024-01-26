@@ -13,8 +13,10 @@ RUN apk update \
     musl-dev \
     openssl-dev \
     python3-dev \
- && pip3 install --upgrade pip \
- && pip3 install azure-cli==${AZURE_CLI_VERSION} \
+ && python3 -m venv venv \
+ && source venv/bin/activate \
+ && pip install --upgrade pip \
+ && pip install azure-cli==${AZURE_CLI_VERSION} \
  && rm -rf /root/.cache/pip \
  && apk del .build-deps \
  && rm -rf /var/cache/apk/*
