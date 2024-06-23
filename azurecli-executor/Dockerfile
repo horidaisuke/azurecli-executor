@@ -17,7 +17,7 @@ RUN chmod +x /entrypoint.sh \
     python3-dev \
  && python3 -m venv venv \
  && source venv/bin/activate \
- && pip install --upgrade pip \
+ && pip install --upgrade pip setuptools \
  && pip install azure-cli==${AZURE_CLI_VERSION} \
  && rm -rf /root/.cache/pip \
  && apk del .build-deps \
