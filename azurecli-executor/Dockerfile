@@ -1,4 +1,4 @@
-FROM library/docker:25.0.4
+FROM library/docker:25.0.5
 ENV AZURE_CLI_VERSION 2.61.0
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh \
