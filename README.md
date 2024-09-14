@@ -40,7 +40,7 @@ jobs:
 
 Tags name is made from join of [simple tags of docker](https://hub.docker.com/_/docker) and [tags of azure-cli](https://github.com/Azure/azure-cli/tags).
 
-* `27.1.1-azurecli-2.62.0`, `latest`
+* `27.1.1-azurecli-2.64.0`, `latest`
 
 ## License
 
