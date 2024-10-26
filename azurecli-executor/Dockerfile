@@ -1,5 +1,5 @@
 FROM library/docker:27.2.1
-ENV AZURE_CLI_VERSION 2.64.0
+ENV AZURE_CLI_VERSION 2.65.0
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh \
  && apk update \
