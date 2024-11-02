@@ -1,6 +1,7 @@
-# azurecli-executor
+# [Departed] azurecli-executor
 
-Circleci executor installed azure cli
+This repository will be no longer maintenance. 
+Recommend to use [Official Circleci Executor](https://hub.docker.com/r/cimg/azure).
 
 ## Usage
 
